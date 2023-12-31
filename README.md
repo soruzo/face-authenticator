@@ -1,10 +1,15 @@
 # Identificação Facial com dlib
-xxx
-integrantes
+Atividade de identificação facial, para o projeto final de Visão Computacional.
+
+---
+### Integrantes:
+- Anthony Carvalho
+- Bruno Eduardo
+- Bruno Neves
+- Carla Scherer
 
 ---
 ## Estrutura do Projeto
-
 - `Dockerfile`: Define o ambiente e dependências do projeto.
 - `requirements.txt`: Lista as dependências Python.
 - `main.py`: Script principal para identificação facial.
@@ -37,11 +42,12 @@ sh get-docker.sh
 │       ├── foto1.jpg
 │       └── foto2.jpg
 ```
-#### 3. Execute o contêiner Docker.
+#### 3. Execute o contêiner Docker na pasta raiz do projeto.
 ```bash
 docker build -t reconhecimento_facial .
 docker run reconhecimento_facial
 ```
 
-## O que vai acontecer?
+## O que esperar?
 O script **main.py** processará as imagens em **/to-identify**, tentando identificar as faces com base nos embeddings extraídos das imagens em **/faces**.
+E retornará (no terminal) se a foto foi identificada ou não.
